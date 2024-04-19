@@ -1,0 +1,4 @@
+// copy files
+// go to folder of files
+ssh-keygen -f levelup_key
+terraform apply

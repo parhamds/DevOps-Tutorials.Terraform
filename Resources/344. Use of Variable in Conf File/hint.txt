@@ -1,0 +1,13 @@
+// way 1
+// create createinstance,provider,variable
+terraform plan
+// enter values of variables manually
+
+// way 2 (put values of variables in command)
+create creatinstace,provider,variable
+terraform plan --var AWS_ACCESS_KEY="AKIA4EF4JNMSCCKVP4SG" --var AWS_SECRET_KEY="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"
+
+// way 3 (put values of variables in terraform.tfvars)
+// create creatinstace,provider,variable,terraform.tfvars
+terraform plan
+// if terraform.tfvars contains secrets, should be put in .gitignore

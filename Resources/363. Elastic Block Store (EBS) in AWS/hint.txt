@@ -1,0 +1,11 @@
+// do the tf apply
+// ssh to vm
+// format volume
+mkfs.ext4 <disk_name> // disk name is chosen on tf files (/dev/xvdh)
+mkdir -p /data 
+mount <disk_name> /data // mount volume to a path
+df -h
+// do auto mount after reboot
+vim /etc/fstab 
+//add
+<disk_name> /data ext4 defaults 0 0

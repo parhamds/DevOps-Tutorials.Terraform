@@ -1,0 +1,11 @@
+// do the tf apply
+// ssh to vm
+// test connection to s3 bucket
+// install awscli
+sudo su
+apt update
+apt install python-pip python-dev
+pip install awscli
+echo "some text" > myfile.txt
+aws s3 myfile.txt s3://<bucket_name>
+// it can be done without any manual authentication

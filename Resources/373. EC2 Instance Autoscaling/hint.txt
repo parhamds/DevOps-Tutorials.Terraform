@@ -1,0 +1,8 @@
+// do the tf apply
+// ssh to vm
+// test scaling
+sudo su
+apt update
+apt install stress
+stress --cpu 2 --timeout 300
+// a new instace will be created after some time

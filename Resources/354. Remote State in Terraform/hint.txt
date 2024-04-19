@@ -1,0 +1,16 @@
+// on aws create a s3 bucket (ex name=tf-state-98ftr), enable "Bucket Versioning"
+// on tf machine:
+sudo apt update
+sudo apt install awscli
+aws configure
+// Access key AKIA4EF4JNMSCCKVP4SG
+// Secret access key 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
+// region eu-north-1
+// format 
+
+//copy tf files
+terraform init
+terraform plan
+terraform apply
+
+// state file now is saved on s3 bucket and will be read from there on next tf applys

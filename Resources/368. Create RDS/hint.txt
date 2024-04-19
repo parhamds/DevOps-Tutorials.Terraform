@@ -1,0 +1,8 @@
+// do the tf apply
+// test the db:
+// ssh to vm
+sudo apt update
+sudo apt install mysql-client
+mysql -u <user(root)> -h <db_hostname> -p'<root_pass>'
+show database
+exit

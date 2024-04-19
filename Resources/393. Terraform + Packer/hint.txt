@@ -1,0 +1,7 @@
+// install packer (search on google)
+// confirm installation
+packer --version
+
+// create custom AMI
+packer validate <json_file_name>
+packer build <json_file_name>

@@ -1,0 +1,12 @@
+// gcp config for terraform
+create or select project
+aim & admin, service account, create service account(role=owner)
+aim & admin, service account, key, create new key, download json file.
+apis & services, enable apis & services, enable "cloud resource manager api","compute engine api","cloud storage api"
+cloud storage, browser, create bucket (multi region,standard)
+cloud storage, browser, choose created bucket, create folder,
+
+//insert data on tf file, copy tf file and key json file to tf vm, then run:
+terraform init
+terraform plan
+terraform apply
